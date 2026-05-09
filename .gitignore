@@ -2,3 +2,4 @@ images/
 *.keras
 .venv/
 __pycache__/
+requirements.txt
