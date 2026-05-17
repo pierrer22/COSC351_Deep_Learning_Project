@@ -4,3 +4,4 @@ images/
 __pycache__/
 requirements.txt
 COSC351_Deep_Learning_Project.code-workspace
+instances_train2017.json
