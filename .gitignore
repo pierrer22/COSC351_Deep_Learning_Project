@@ -5,4 +5,4 @@ __pycache__/
 requirements.txt
 COSC351_Deep_Learning_Project.code-workspace
 *.json
-coco_tomatoes/
+coco_*/
