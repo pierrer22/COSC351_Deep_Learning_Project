@@ -37,7 +37,7 @@ A single-class approach was used to:
 ## Data Processing
 
 - Images loaded using TensorFlow pipelines
-- Bounding boxes converted from COCO format → `(x1, y1, x2, y2)`
+- Bounding boxes are used in COCO format → (x, y, width, height)
 - Images resized to fixed input size (512–640 resolution)
 - Dataset includes:
   - shuffling
@@ -57,6 +57,7 @@ A single-class approach was used to:
 - Good balance of accuracy and performance  
 - Strong baseline for object detection  
 - Works well with limited data via transfer learning  
+- RetinaNet is particularly effective for handling class imbalance through focal loss, making it suitable for object detection tasks with varying object frequencies.
 
 ---
 
@@ -83,6 +84,13 @@ Model performance was evaluated using:
 - loss values  
 - prediction confidence  
 - visual inspection of bounding boxes  
+
+### COCO Metrics (mAP)
+
+The model was also evaluated using COCO metrics, specifically mean Average Precision (mAP), 
+which measures both detection accuracy and bounding box quality at different IoU thresholds.
+
+The results show that the model achieves reasonable detection performance and generalises well to unseen test data.
 
 ### Results
 
@@ -122,6 +130,8 @@ This demonstrates good real‑world reliability.
 6. Retrain with improved dataset  
 
 This iterative loop significantly reduces manual annotation effort.
+
+This creates a human-in-the-loop system where automatically generated annotations can be refined and reused to continuously improve the dataset and model performance.
 
 ---
 
