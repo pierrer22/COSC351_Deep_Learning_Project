@@ -4,5 +4,7 @@ images/
 __pycache__/
 requirements.txt
 COSC351_Deep_Learning_Project.code-workspace
-*.json
 coco_*/
+tomato_auto_annotator/
+tomato_logs/
+images.zip
