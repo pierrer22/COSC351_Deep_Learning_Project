@@ -62,10 +62,10 @@ A single-class approach was used to:
 
 ## Training
 
-- Optimizer: Adam  
+- Optimizer: SGD  
 - Loss:
-  - bounding box regression loss  
-  - classification loss  
+  - bounding box: smooth L1
+  - classification: Focal Loss
 
 - Training techniques:
   - batching and caching  
